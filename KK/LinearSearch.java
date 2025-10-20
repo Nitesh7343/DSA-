@@ -9,7 +9,8 @@ public class LinearSearch {
             arr[i] = sc.nextInt();
         }
         int target = sc.nextInt();
-        System.out.println(linearSearchAll(arr, target, 0,new ArrayList<Integer>()));
+        ArrayList<Integer> result = new ArrayList<>();
+        System.out.println(linearSearchAll(arr, target, 0,result));
     }
 
     private static int linearSearch(int[] arr, int target, int i) {
@@ -23,4 +24,18 @@ public class LinearSearch {
         return linearSearchAll(arr, target, i+1,result);
         
     }
+// if you what to return new arraylist instead of passing as argument  
+    // static ArrayList linearSearchAll(int[] arr, int target, int i) {
+    //     ArrayList<Integer> result = new ArrayList<>();
+    //     if(i == arr.length) return result;
+
+    //     // this will contains answer for that function call only. 
+    //     if(arr[i] == target) result.add(i);
+
+    //     ArrayList<Integer> ansFromBelowCalls = linearSearchAll(arr, target, i+1);
+
+    //     result.addAll(ansFromBelowCalls);
+    //     return result;
+        
+    // }
 }
