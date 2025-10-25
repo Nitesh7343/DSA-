@@ -42,7 +42,7 @@ public class LInkedList1{
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main(string_[] args) {
 //		Student head=new Student("A");
 //		head.next=new Student("B");
 //		head.next.next=new Student("C");

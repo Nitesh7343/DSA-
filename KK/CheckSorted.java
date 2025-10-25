@@ -1,6 +1,6 @@
 import java.util.*;
 public class CheckSorted {
-    public static void main(String[] args) {
+    public static void main(string_[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];

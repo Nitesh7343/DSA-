@@ -1,12 +1,12 @@
 import java.util.*;
 public class reverseN {
-    public static void main(String[] args) {
+    public static void main(string_[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); 
         System.out.println(pow(n));
     }
 
-
+ 
     static int pow(int n) {
         int digits = (int)Math.log10(n) +1;
         return reverse(n , digits);
