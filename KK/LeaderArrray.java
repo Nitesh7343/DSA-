@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class LeaderArrray {
     public static void main(String[] args) {
@@ -24,6 +22,7 @@ public class LeaderArrray {
                 lst.add(largest);
             }
         }
+        Collections.reverse(lst);
         return lst;
     }
 }
