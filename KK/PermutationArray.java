@@ -3,5 +3,5 @@ public class PermutationArray {
         int[] arr = {1, 2, 3};
         System.out.println(permute("", arr));
     }
-    public static ArrayList<Integer> permute()
+    public static ArrayLisat<Integer> permute()
 }
