@@ -1,4 +1,4 @@
-package KK.LinkedList;
+package KK.LinkedList.com.LinkedList;
 
 public class Main extends LL {
     public static void main(String[] args) {

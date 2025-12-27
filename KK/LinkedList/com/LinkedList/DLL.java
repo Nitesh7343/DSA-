@@ -1,4 +1,4 @@
-package KK.LinkedList;
+package KK.LinkedList.com.LinkedList;
 
 public class DLL {
     Node head;
