@@ -33,23 +33,46 @@ public class LL {
             addFirst(val);
             return;
         }
-        if(index == size) {
-            addLast(val);
+//        if(index == size) {
+//            addLast(val);
+//            return;
+//        }
+//
+//        Node temp = head;
+//        for(int i = 1; i < index;i++) {
+//            temp = temp.next;
+//        }
+////        Node node = new Node(val);
+////        Node temp2 = temp.next;
+////        temp.next = node;
+////        node.next = temp2;
+//        Node node = new Node(val,temp.next);
+//        temp.next = node;
+//
+//        size++;
+        Node temp = head;
+        insertRec(index,temp,val);
+//        insertRec2(index,temp,val);
+        size++;
+    }
+
+//    private Node insertRec2(int index, Node temp, int val) {
+//        if(index == 1) {
+//            Node node = new Node(val,temp.next);
+//            temp.next = node;
+//            return node;
+//        }
+//        return insertRec2(index-1,temp.next,val);
+//    }
+
+    private void insertRec(int index,Node temp,int val) {
+        if(index == 1) {
+            Node node = new Node(val,temp.next);
+            temp.next = node;
             return;
         }
 
-        Node temp = head;
-        for(int i = 1; i < index;i++) {
-            temp = temp.next;
-        }
-//        Node node = new Node(val);
-//        Node temp2 = temp.next;
-//        temp.next = node;
-//        node.next = temp2;
-        Node node = new Node(val,temp.next);
-        temp.next = node;
-
-        size++;
+        insertRec(index-1,temp.next,val);
     }
 
     public void display() {

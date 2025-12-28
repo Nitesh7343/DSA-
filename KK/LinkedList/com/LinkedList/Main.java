@@ -32,12 +32,19 @@ public class Main extends LL {
 
         //Circular LinkedList
 
-        CLL lst2 = new CLL();
-        lst2.add(23);
-        lst2.add(3);
-        lst2.add(2);
-        lst2.add(203);
-        lst2.add(45);
-        lst2.display();
+//        CLL lst2 = new CLL();
+//        lst2.add(23);
+//        lst2.add(3);
+//        lst2.add(2);
+//        lst2.add(203);
+//        lst2.add(45);
+//        lst2.display();
+
+        LL lst = new LL();
+        lst.addFirst(1);
+        lst.addLast(3);
+        lst.display();
+        lst.insert(2,1);
+        lst.display();
     }
 }
