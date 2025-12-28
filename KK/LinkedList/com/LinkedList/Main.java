@@ -19,15 +19,25 @@ public class Main extends LL {
 
         //Doubly LinkedList
 
-        DLL lst1 = new DLL();
-        lst1.addFirst(23);
-        lst1.addFirst(3);
-        lst1.addFirst(2);
-        lst1.addLast(203);
-        lst1.addLast(0);
-        lst1.display();
-        lst1.insert(50,4);
-        lst1.display();
-        lst1.displayReverse();
+//        DLL lst1 = new DLL();
+//        lst1.addFirst(23);
+//        lst1.addFirst(3);
+//        lst1.addFirst(2);
+//        lst1.addLast(203);
+//        lst1.addLast(0);
+//        lst1.display();
+//        lst1.insert(50,4);
+//        lst1.display();
+//        lst1.displayReverse();
+
+        //Circular LinkedList
+
+        CLL lst2 = new CLL();
+        lst2.add(23);
+        lst2.add(3);
+        lst2.add(2);
+        lst2.add(203);
+        lst2.add(45);
+        lst2.display();
     }
 }
