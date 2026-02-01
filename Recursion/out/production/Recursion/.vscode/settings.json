@@ -1,0 +1,5 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "emmet.showAbbreviationSuggestions": true,
+    "editor.parameterHints.enabled": true
+}
